@@ -1,0 +1,282 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  background-color: rgba(230, 222, 235, 0.529);
+  
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.brand h1
+{
+    margin:0;
+    font-size: 35px;
+    color:  rgba(100, 49, 26, 0.934);
+}
+
+.slogan {
+    margin: 0;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+}
+
+.navbar-links
+{
+    display: flex;
+    column-gap:20px; /*space bw navbar linlks(home,contact)*/
+}
+
+.navbar-links a
+{
+text-decoration: none;
+color :brown;
+font-size: 16px;
+}
+
+
+.navbar-links a:hover
+{
+    text-decoration: underline;
+    color:brown
+}
+
+.navbar-menu-toggle
+{
+    display:none;
+}
+
+.navbar h1
+{
+word-spacing: 7px;
+text-indent:10px ;
+}
+.navbar-links p:hover
+{
+
+transform: scale(1.1);
+
+}
+.navbar h4{
+    margin-top: 20px;
+    
+}
+/* Side Navbar*/
+
+.sideNavbar{
+    background-color: rgb(190, 187, 227);
+    width: 30%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: rgb(231, 96, 96);
+    transition: 1.5s;
+    
+}
+.side-navbar-link
+{
+margin-bottom: 30px;
+}
+.side-navbar-link a 
+{
+    text-decoration: none;
+    color: brown;
+}
+.side-navbar-links a:hover
+{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.side-navbar-links p:hover
+{
+    
+    transform: scale(1.1);
+}
+
+/*Header*/
+.header{
+    
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.headerbutton
+{
+    padding-left:20px ;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(11, 2, 56);
+    color: white;
+    border: none;   
+    border-radius: 10px;
+cursor: pointer;
+
+   
+}
+.header-image:hover
+{
+transform: scale(1.1);
+}
+.headerbutton:hover
+{
+    box-shadow: rgba(187, 44, 132, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 118, 0.25) 0 1px 2px,rgba(187, 44, 134, 0.25) 0 2px 4px,rgba(187, 44, 154, 0.25) 0 4px 8px,rgba(187, 44, 137, 0.25) 0 8px 16px,rgba(187, 44, 156, 0.25) 0 16px 32px;
+  transform: scale(1.05);
+}
+.header h1:hover
+{
+    color: rgb(251, 110, 2);
+    transform: scale(1.1);
+}
+
+
+.service
+{
+    padding: 20px;
+}
+    
+.services-container-1
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.services-container-2
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.services-container-2 div 
+{
+    border-radius: 10px;
+    background-color: rgba(199, 179, 53, 0.334);
+    padding: 10px;
+}
+
+.header-image
+{
+    box-shadow: 10px 10px 20px rgba(4, 4, 4, 0.822);
+}
+
+.new-arrival
+{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+.new-arrival-container
+{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button 
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: rgb(70, 42, 0);
+    border-radius: 10px;
+    background-color: rgb(176, 221, 238);
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border: none;
+}
+
+/* News letter section*/
+.news
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.news input
+{
+    margin-top: 10px;
+    padding: 12px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button
+{
+    margin-top: 10px;
+    color: rgb(187, 204, 204);
+    background-color: rgb(44, 15, 0);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+/* Media Query*/
+
+.footer
+{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(48, 35, 3);
+    color: white;
+    text-align: center;
+    
+}
+.footer-about
+{
+    margin-top: 10px;
+   
+}
+
+
+@media screen and (max-width:700px) 
+{
+    .navbar-menu-toggle
+    {
+        display: block;
+    }
+    .navbar-links
+    {
+        display:none;
+    }
+    .header-image
+{
+    display: none;
+}
+.services-container-1
+{
+    display: none;
+}
+.services-container-2
+{
+flex-direction: column;
+}
+}
